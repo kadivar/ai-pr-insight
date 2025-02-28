@@ -1,0 +1,10 @@
+.env
+reports/*
+cache/*
+output/*
+*.log
+*.json
+venv
+__pycache__/
+*.egg-info
+dist/*

@@ -1,0 +1,27 @@
+include README.md
+include LICENSE
+include requirements.txt
+include pyproject.toml
+include setup.py
+include setup.cfg
+include CHANGELOG.md
+include CONTRIBUTING.md
+
+# Exclude development and environment files
+exclude .env
+exclude .gitignore
+exclude .git
+exclude .pytest_cache
+exclude __pycache__
+exclude *.pyc
+exclude *.pyo
+exclude *.pyd
+
+# Include documentation
+recursive-include docs *.rst *.md *.py *.png *.jpg
+
+# Include all package data
+recursive-include src *.py *.json *.yaml *.yml
+
+# Include test files
+recursive-include tests *.py *.json *.yaml *.yml
